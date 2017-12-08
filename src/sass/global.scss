@@ -23,9 +23,12 @@ html,body{
 	padding: 0;
 }
 
+$bgcolor_3baaf2:#3baaf2;
+
 .bgcolor_3baaf2{
-	background: #3baaf2;
+	background: $bgcolor_3baaf2;
 }
+
 
 .bgcolor_dee9ed{
 	background: #dee9ed;
@@ -36,11 +39,11 @@ html,body{
 }
 
 .bgcolor_3baaf2{
-	background: #3baaf2;
+	background: $bgcolor_3baaf2;
 }
 
 .bgcolor_3baaf2{
-	background:#3baaf2;
+	background:$bgcolor_3baaf2;
 }
 
 .bor_top_1px{
@@ -132,7 +135,7 @@ p{
 }
 
 .quick-nav .app:hover,.quick-nav .reg:hover,.quick-nav .login:hover{
-	background: #3baaf2;
+	background: $bgcolor_3baaf2;
 }
 
 .quick-nav .app .code{
@@ -176,7 +179,7 @@ p{
 }
 
 .quick-nav .reg ul li:hover{
-	background: #3baaf2;
+	background: $bgcolor_3baaf2;
 }
 
 .quick-nav .phone{
@@ -202,8 +205,12 @@ p{
 	text-align: center;
 }
 
+.text-l{
+	text-align:left;
+}
+
 .pub-navs .navs-list h4{
-	background: #3baaf2;
+	background: $bgcolor_3baaf2;
 	font-size: 15px;
 	height: 40px;
 	line-height: 40px;
@@ -238,13 +245,12 @@ a{
 	color: #181818;
 }
 
-$bgcolor_3baaf2:#3baaf2;
-
 .pub-header{
 
 	.logo-header{
 		
 		.search{
+			margin-top: 10px;
 
 			.type{
 				height: 36px;
@@ -253,6 +259,7 @@ $bgcolor_3baaf2:#3baaf2;
 				border-left:1px solid $bgcolor_3baaf2;
 				border-top:1px solid $bgcolor_3baaf2;
 				border-bottom:1px solid $bgcolor_3baaf2;
+				cursor: pointer;
 
 				.shows{
 					span{
@@ -270,9 +277,33 @@ $bgcolor_3baaf2:#3baaf2;
 				}
 			}
 
-			.input-search{}
+			.input-search{
 
-			.submit{}
+				.input-text{
+					height:34px;
+					line-height: 34px;
+					border-top:1px solid $bgcolor_3baaf2;
+					border-bottom:1px solid $bgcolor_3baaf2;
+					border-left:1px solid $bgcolor_3baaf2;
+					border-right:none;
+					width: 280px;
+					padding-left:20px;
+				}
+			}
+
+			.submit{
+				height: 38px;
+				line-height: 38px;
+				padding:0 20px;
+				display: block;
+				background:$bgcolor_3baaf2;
+				cursor: pointer;
+
+				.iconfont{
+					font-size:22px;
+					color:#fff;
+				}
+			}
 		}
 	}
 }
@@ -292,7 +323,61 @@ $bgcolor_3baaf2:#3baaf2;
 	margin:0 10px;
 }
 
+.reputation{
+	width:1200px;
+	margin:0 auto;
+	padding:30px 0;
 
+	.lists{
+		width: 33.3%;
+
+		p{
+			font-size:16px;
+			color: #000;
+		}
+
+		span{
+			font-size:12px;
+			color: #292929;
+		}
+	}
+
+	.img1{
+		background:url('../img/bottom-img1.jpg') 180px center no-repeat;
+
+		p{
+			margin-left: 230px;
+		}
+
+		span{
+			margin-left: 230px;
+		}
+	}
+
+	.img2{
+		background:url('../img/bottom-img2.jpg') 90px center no-repeat;
+
+		p{
+			margin-left: 145px;
+		}
+
+		span{
+			margin-left: 145px;
+		}
+	}
+
+	.img3{
+		background:url('../img/bottom-img3.jpg') left center no-repeat;
+
+		p{
+			margin-left: 60px;
+		}
+
+		span{
+			margin-left: 60px;
+		}
+	}
+}
 
 
 
