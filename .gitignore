@@ -1,5 +1,5 @@
 # don't upload config file
 
 #后期gulp 模块不上传，包含文件夹：node_modules，文件：gulpfile.js,package.json
-#node_modules
+node_modules/
 
