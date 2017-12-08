@@ -238,6 +238,47 @@ a{
 	color: #181818;
 }
 
+$bgcolor_3baaf2:#3baaf2;
+
+.pub-header{
+
+	.logo-header{
+		
+		.search{
+
+			.type{
+				height: 36px;
+				line-height: 36px;
+				padding:0 15px;
+				border-left:1px solid $bgcolor_3baaf2;
+				border-top:1px solid $bgcolor_3baaf2;
+				border-bottom:1px solid $bgcolor_3baaf2;
+
+				.shows{
+					span{
+						font-size:14px;
+					}
+
+					.iconfont{
+						font-size:14px;
+						margin-left:5px;
+					}
+				}
+
+				.lists{
+					display: none;
+				}
+			}
+
+			.input-search{}
+
+			.submit{}
+		}
+	}
+}
+
+
+
 
 /*footer*/
 
