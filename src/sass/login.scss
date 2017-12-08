@@ -233,9 +233,31 @@
 	background:#dee9ed;
 
 	.container{
-
+		
+		width: 1200px;
+		margin: 0 auto;
+		padding-top: 60px;
+		
 		.reg-box{
+			
+			.error-info{
+			    padding: 20px;
+			    margin: 20px 0;
+			    border: 1px solid #eee;
+			    border-radius: 3px;
+    			border-left: 5px solid #ce4844;
+    			width: 400px;
+				margin:0 auto;
+
+			    h4{
+			    	color: #ce4844;
+			    	margin-top: 0;
+    				margin-bottom: 5px;
+			    }
+			}
+
 			background:#fff;
+			padding: 60px 0;
 
 			.box-inner{
 				width: 400px;
@@ -300,6 +322,48 @@
 				}
 
 			}
+		}
+	}
+}
+
+.reg-success{
+	.container{
+		width: 1200px;
+		margin:0 auto;
+
+		.logo-reg{
+			margin-top: 10px;
+		}
+
+		.reg-success{
+			margin-top: 100px;
+			
+			.success-info{
+				font-size:20px;
+				color: #f68e3a;
+				margin-bottom: 50px;
+
+				.iconfont{
+					font-size:60px;
+					color:green;
+				}
+			}
+
+			p{
+				a{
+					color: #3b90d1;
+				}
+			}
+
+			.login{
+				display: inline-block;
+				background:#3b90d1;
+				color: #fff;
+				padding:8px 20px;
+				font-size:16px;
+				margin-top: 25px;
+			}
+				
 		}
 	}
 }
