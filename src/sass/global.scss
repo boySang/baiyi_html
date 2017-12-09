@@ -77,6 +77,10 @@ $bgcolor_dee9ed:#dee9ed;
 	margin-top: 50px;
 }
 
+input[type=text],input[type=textarea]{
+	outline:none;
+}
+
 .commen-header{
 	height: 26px;
 	line-height: 26px;
@@ -247,65 +251,60 @@ a{
 	color: #181818;
 }
 
-.pub-header{
 
-	.logo-header{
-		
-		.search{
-			margin-top: 10px;
+.search{
+	margin-top: 10px;
 
-			.type{
-				height: 36px;
-				line-height: 36px;
-				padding:0 15px;
-				border-left:1px solid $bgcolor_3baaf2;
-				border-top:1px solid $bgcolor_3baaf2;
-				border-bottom:1px solid $bgcolor_3baaf2;
-				cursor: pointer;
+	.type{
+		height: 36px;
+		line-height: 36px;
+		padding:0 15px;
+		border-left:1px solid $bgcolor_3baaf2;
+		border-top:1px solid $bgcolor_3baaf2;
+		border-bottom:1px solid $bgcolor_3baaf2;
+		cursor: pointer;
 
-				.shows{
-					span{
-						font-size:14px;
-					}
-
-					.iconfont{
-						font-size:14px;
-						margin-left:5px;
-					}
-				}
-
-				.lists{
-					display: none;
-				}
+		.shows{
+			span{
+				font-size:14px;
 			}
 
-			.input-search{
-
-				.input-text{
-					height:34px;
-					line-height: 34px;
-					border-top:1px solid $bgcolor_3baaf2;
-					border-bottom:1px solid $bgcolor_3baaf2;
-					border-left:1px solid $bgcolor_3baaf2;
-					border-right:none;
-					width: 280px;
-					padding-left:20px;
-				}
+			.iconfont{
+				font-size:14px;
+				margin-left:5px;
 			}
+		}
 
-			.submit{
-				height: 38px;
-				line-height: 38px;
-				padding:0 20px;
-				display: block;
-				background:$bgcolor_3baaf2;
-				cursor: pointer;
+		.lists{
+			display: none;
+		}
+	}
 
-				.iconfont{
-					font-size:22px;
-					color:#fff;
-				}
-			}
+	.input-search{
+
+		.input-text{
+			height:34px;
+			line-height: 34px;
+			border-top:1px solid $bgcolor_3baaf2;
+			border-bottom:1px solid $bgcolor_3baaf2;
+			border-left:1px solid $bgcolor_3baaf2;
+			border-right:none;
+			width: 280px;
+			padding-left:20px;
+		}
+	}
+
+	.submit{
+		height: 38px;
+		line-height: 38px;
+		padding:0 20px;
+		display: block;
+		background:$bgcolor_3baaf2;
+		cursor: pointer;
+
+		.iconfont{
+			font-size:22px;
+			color:#fff;
 		}
 	}
 }
