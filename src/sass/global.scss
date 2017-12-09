@@ -25,13 +25,15 @@ html,body{
 
 $bgcolor_3baaf2:#3baaf2;
 
+$bgcolor_dee9ed:#dee9ed;
+
 .bgcolor_3baaf2{
 	background: $bgcolor_3baaf2;
 }
 
 
 .bgcolor_dee9ed{
-	background: #dee9ed;
+	background: $bgcolor_dee9ed;
 }
 
 .bgcolor_bfd3da{
@@ -78,7 +80,7 @@ $bgcolor_3baaf2:#3baaf2;
 .commen-header{
 	height: 26px;
 	line-height: 26px;
-	background: #dee9ed;
+	background: $bgcolor_dee9ed;
 	margin-bottom: 30px;
 }
 
@@ -117,7 +119,7 @@ p{
 	display: none;
 	margin: 0;
     padding: 0;
-    background: #dee9ed;
+    background: $bgcolor_dee9ed;
     position: absolute;
     width: 64px;
     left: 0;

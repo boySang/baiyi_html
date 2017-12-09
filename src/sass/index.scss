@@ -1,3 +1,6 @@
+$bgcolor_dee9ed:#dee9ed;
+
+
 .banner{
 	width: 1200px;
 	height: 500px;
@@ -512,13 +515,182 @@
 
 
 
+// 支付确认页面
 
+.pay-page{
+	
+	.pay-header{
+		background:$bgcolor_dee9ed;
+		height:40px;
+		line-height:40px;
+		padding-right:10px;
 
+		span{
+			font-size:12px;
+		}
+	}
 
+	.pay-success{
+		width:300px;
+		margin:40px auto 80px;
+		padding:20px 0;
+		background:url('../img/pay-success.jpg') left center no-repeat;
 
-/*detail*/
+		p{
+			margin-left: 80px;
+		}
 
+		.tit{
+			font-size:20px;
+		}
 
+		.number{
+			font-size:15px;
+		}
+	}
+
+	.pay-info{
+
+		.pay-table{
+			width: 100%;
+			margin-bottom: 20px;
+
+			tr{
+
+				td{
+					padding:0;
+					margin:0;
+
+					.info-inner{
+						border:2px solid #b1b1b1;
+						margin-top:-2px;
+
+						.img{
+							width: 101px;
+
+							img{
+								padding:5px;
+							}
+						}
+
+						.info-mail{
+							width: 1094px;
+							border-left:1px solid #ddd;
+
+							.main{
+
+								span{
+									display: block;
+									float: left;
+									border-left:1px solid #ddd;
+									margin-left: -1px;
+									padding: 4px 0;
+								}
+
+								.tit{
+									width: 100px;
+								}
+
+								.main-text{
+									width: 447px;
+									border-left:1px solid #ddd;
+								}
+							}
+
+							.mid{
+								.tit,.main-text{
+									border-top:1px solid #ddd;
+									border-bottom:1px solid #ddd;
+								}
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	.total{
+		padding-right: 10px;
+		margin-top: 80px;
+		margin-bottom: 16px;
+
+		p{
+			font-size:16px;
+		}
+	}
+
+	.pay-type{
+		border:1px solid $bgcolor_dee9ed;
+
+		.tit{
+			background: $bgcolor_dee9ed;
+			line-height: 38px;
+			height: 38px;
+			padding-left:15px;
+		}
+
+		.type{
+			padding:30px 40px;
+
+			.type-list{
+
+				.radio-type{
+					margin-right: 10px;
+					display: inline-block;
+				}
+			}
+			
+			.topay{
+
+				.logo{
+
+					width: 100%;
+					border-top:3px solid #ff7550;
+					margin-top: 20px;
+
+					img{
+				    	padding: 20px 0 10px 30px;
+					}
+				}
+
+				.pay-botton{
+
+					p{
+						padding-right:44px;
+						font-size:12px;
+					}
+
+					.money{
+						font-size:16px;
+						padding-right:20px;
+					}
+
+					#pay-botton{
+
+						background:green;
+						color: #fff;
+						display: inline-block;
+						padding:8px 22px;
+						border-radius:3px;
+						font-size:14px;
+						font-weight: 400;
+						margin-top: 10px;
+					}
+				}
+			}
+
+			.topay.alipay{
+
+				#pay-botton{
+					background:#ff7550;
+				}
+
+			}
+		}
+	}
+}
 
 
 
