@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="description" content="描述">
+	<meta name="keywords" content="关键字">
+	<title>百一知识产权</title>
+	<!-- 公共css -->
+    <link rel="stylesheet" type="text/css" href="./dist/css/global.css">
+    <!-- index -->
+    <link rel="stylesheet" type="text/css" href="./dist/css/login.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_486719_jrxuv59w769lik9.css">
+</head>
+<body class="reg-new-v1">
+
+<div class="container">
+	<div class="logo-reg text-c">
+		<a href="#" title=""><img src="./dist/img/logo.png" alt=""></a>
+	</div>
+	<div class="reg-box">
+		<form action="" method="post" id="reg-form">
+			<div class="error-info" style="display:none">
+				<h4>验证不通过，请修改以下错误</h4>
+				<p></p>
+			</div>
+			<div class="box-inner">
+				<div class="input-box">
+					<div class="input-box-inner">
+						<input type="text" class="input-text" name="phone" id="phone" placeholder="请输入手机号" minlength="11" maxlength="11">
+						<i class="iconfont icon-shouji1"></i>
+					</div>
+				</div>
+				<div class="input-box">
+					<div class="input-box-inner">
+						<input type="text" class="input-text" name="paswd" id="paswd" minlength="6" maxlength="20" placeholder="请输入密码">
+						<i class="iconfont icon-mima"></i>
+					</div>
+				</div>
+				<div class="input-box">
+					<div class="input-box-inner">
+						<input type="submit" class="submit" value="登 录">
+					</div>
+				</div>
+			</div>
+			<div class="tologin text-r">
+				<a href="javascript:void(0);" class="forget">忘记密码？</a>还没账号？<a href="javascript:void(0);">立即注册</a>>
+			</div>
+		</form>
+	</div>
+</div>
+<script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-validate/1.17.0/localization/messages_zh.min.js"></script>
+
+<script>
+var container = $('#reg-form .error-info');	
+
+$.validator.setDefaults({
+    submitHandler: function() {
+      // alert("提交事件!");
+      window.location.href="reg-success.html";
+    }
+});
+
+$('#reg-form').validate({
+	rules:{
+		phone:{
+			required:true,
+			number:true,
+			minlength:11,
+			maxlength:11,
+		},
+		paswd:{
+			required:true,
+			minlength:6,
+			maxlength:20,
+		},
+	},
+	messages:{
+		phone:{
+			required:'请输入手机号、',
+			number:'手机号格式错误、',
+			minlength:'手机号位数不正确、',
+			maxlength:'手机号位数不正确、',
+		},
+		paswd:{
+			required:'请输入密码、',
+			minlength:'密码最少6位',
+			maxlength:'密码最多20位',
+		},
+	},
+	errorContainer: container,
+	errorLabelContainer: $("p", container),
+	wrapper: 'span',
+});
+
+
+
+</script>
+
+</body>
+</html>
